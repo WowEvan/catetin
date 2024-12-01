@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<body>
+    <header>
+        <a href="home.html"><img src="images/logo.png" alt="Logo" id="logo"></a>
+        <nav>    
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sell.html">Sell Notes</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="mentor.html">Become a Mentor</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div id="user_info">
+                <a href="#" id="profile_link" class="account_box">
+                    <img src="images/account.svg" id="account_icon" class="account_icon">
+                    <span id="username_display"></span>
+                </a>
+            </div>            
+            <div id="profile_modal" class="modal">
+                <div class="modal_content">
+                    <span id="close_modal" class="close">&times;</span>
+                    <h2>Profile Information</h2>
+                    <div class="info_field">
+                        <strong>Name</strong>
+                        <input type="text" id="user_name" placeholder="Enter your name">
+                    </div>
+                    <div class="info_field">
+                        <strong>Email</strong>
+                        <span class="email_box" id="user_email"></span>
+                    </div>
+                    <div class="info_field">
+                        <strong>Phone Number</strong>
+                        <input type="tel" id="user_phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="info_field">
+                        <strong>Birthday</strong>
+                        <input type="date" id="user_birthday">
+                    </div>
+                    
+                    <div class="change_password">
+                        <h2>Confirm Current Password</h2>
+                        <label for="current_password">Current Password:</label>
+                        <input type="password" id="current_password" required>
+                    </div>
+                    
+                    <button id="logout_button" class="logout_button">Logout</button>  
+                    
+                    <div class="update_button">
+                        <button id="save_button">Save</button>
+                        <button id="cancel_button">Cancel</button>
+                    </div>                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="slider">
+            <div class="notes_container"></div>
+        </div>
+        
+        <div class="pagination">
+            <button class="page-btn prev-btn" onclick="changePage('prev')">&laquo; Prev</button>
+            <div class="page-numbers"></div>
+            <button class="page-btn next-btn" onclick="changePage('next')">Next &raquo;</button>
+        </div>
+    </main>
+
+    <div class="content1">
+        <h2>Jual Catatan di Catetin itu simpel - Cukup 3 langkah saja!</h2>
+        <div class="flex_page1">
+            <aside class="aside1">
+                <ol id="steps_list">
+                    <li data-image="images/image1.png" class="clickable-item">
+                        <h3>Convert Catatan ke PDF</h3>
+                        Pertama, ubah file catatan Anda (misalnya .jpg, .docx, .xlsx) menjadi format PDF (.pdf) melalui situs web yang tersedia.
+                    </li>
+                    <li data-image="images/image2.jpg" class="clickable-item">
+                        <h3>Upload Catatan</h3>
+                        Kedua, upload catatan Anda ke platform Catetin. Pastikan Anda sudah masuk ke akun. Pilih opsi "+", cari file PDFnya, lalu unggah file.
+                    </li>
+                    <li data-image="images/image3.jpg" class="clickable-item">
+                        <h3>Lengkapi Detail Catatan</h3>
+                        Ketiga, lengkapi informasi mengenai catatan Anda, seperti mata kuliah, semester, dan detail lainnya. Setelah itu, Anda tinggal tunggu proses verifikasi dan catatannya siap untuk dijual!
+                    </li>
+                </ol>
+            </aside>
+            <aside class="aside1">
+                <img id="dynamic_image">
+            </aside>
+        </div>
+        <div class="content1_wrap">
+            <a href="sell.html"><button class="sell_button">Jual Sekarang &#8594;</button></a>
+        </div>
+    </div>
+
+    <div class="content2">
+        <h2>Kesulitan dalam Pembelajaran? Ayo Belajar Bersama Mentor!</h2>
+        <div class="flex_page2">
+            <aside class="aside2">
+                <img src="images/mentor.png" alt="Mentor Image">
+            </aside>
+            <aside class="aside2">
+                <h2>Mentor adalah mahasiswa BINUS yang telah terverifikasi dan memiliki keahlian di mata kuliah yang mereka ajarkan.</h2>
+                <ul>
+                    <h3>Mengapa memilih Mentor?</h3>
+                    <li>
+                        <h4>Nilai Akademis Terbaik</h4>
+                        Semua Mentor kami meraih nilai A- tanpa harus mengulang mata kuliahnya.
+                    </li>
+                    <li>
+                        <h4>Kualitas Terjamin</h4>
+                        Setiap Mentor sudah terverifikasi sebagai ahli, jadi Anda bisa yakin dengan kualitas bimbingan yang diberikan.
+                    </li>
+                    <li>
+                        <h4>Pengalaman yang Sama</h4>
+                        Mentor kami juga mahasiswa BINUS, sehingga mereka memahami tantangan yang Anda hadapi dan dapat memberikan dukungan yang relevan.
+                    </li>
+                </ul>
+                <button class="mentor_button" onclick="alert('Coming Soon!')">Temukan Mentor Anda!</button>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Catetin. All Rights Reserved.</p>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="animate.js"></script>
+    <script src="slider.js"></script>
+    <script src="buy.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+</body>
+</html>

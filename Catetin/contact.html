@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<body>
+    <header>
+        <a href="home.html"><img src="images/logo.png" alt="Logo" id="logo"></a>
+        <nav>    
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sell.html">Sell Notes</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="mentor.html">Become a Mentor</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div id="user_info">
+                <a href="#" id="profile_link" class="account_box">
+                    <img src="images/account.svg" id="account_icon" class="account_icon">
+                    <span id="username_display"></span>
+                </a>
+            </div>            
+            <div id="profile_modal" class="modal">
+                <div class="modal_content">
+                    <span id="close_modal" class="close">&times;</span>
+                    <h2>Profile Information</h2>
+                    <div class="info_field">
+                        <strong>Name</strong>
+                        <input type="text" id="user_name" placeholder="Enter your name">
+                    </div>
+                    <div class="info_field">
+                        <strong>Email</strong>
+                        <span class="email_box" id="user_email"></span>
+                    </div>
+                    <div class="info_field">
+                        <strong>Phone Number</strong>
+                        <input type="tel" id="user_phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="info_field">
+                        <strong>Birthday</strong>
+                        <input type="date" id="user_birthday">
+                    </div>
+                    
+                    <div class="change_password">
+                        <h2>Confirm Current Password</h2>
+                        <label for="current_password">Current Password:</label>
+                        <input type="password" id="current_password" required>
+                    </div>
+                    
+                    <button id="logout_button" class="logout_button">Logout</button>  
+                    
+                    <div class="update_button">
+                        <button id="save_button">Save</button>
+                        <button id="cancel_button">Cancel</button>
+                    </div>                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contact_box">
+        <div class="contact_container">
+            <div class="contact_form">
+                <h2>Hubungi Kami!</h2>
+                <p>Jangan ragu untuk menghubungi kami untuk pertanyaan atau umpan balik. Kami siap membantu!</p>
+                <form id="contactForm" class="form_wrap">
+                    <div class="form_input">
+                        <input type="text" name="name" placeholder="Nama Lengkap" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" placeholder="Pesan Anda" required></textarea>
+                        <button type="submit">Kirim Pesan</button>
+                    </div>
+                </form>
+                <div id="responseMessage"></div>
+                <div class="social_media">
+                    <a class="social_logo" href="#"><img src="images/gmail.png" alt=""></a>
+                    <a class="social_logo" href="#"><img src="images/whatsapp.png" alt=""></a>
+                    <a class="social_logo" href="#"><img src="images/instagram.jpg" alt=""></a>
+                    <a class="social_logo" href="#"><img src="images/line.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3970.2740907744973!2d106.781525!3d-6.201935!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e42279afef%3A0x8f7e9be2925d8a3c!2sBINUS%20University%20Kemanggisan!5e0!3m2!1sen!2sid!4v1697813456789!5m2!1sen!2sid" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Catetin. All Rights Reserved.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

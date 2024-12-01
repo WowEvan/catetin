@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Menjadi Mentor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<body>
+    <header>
+        <a href="home.html"><img src="images/logo.png" alt="Logo" id="logo"></a>
+        <nav>    
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sell.html">Sell Notes</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="mentor.html">Become a Mentor</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div id="user_info">
+                <a href="#" id="profile_link" class="account_box">
+                    <img src="images/account.svg" id="account_icon" class="account_icon">
+                    <span id="username_display"></span>
+                </a>
+            </div>            
+            <div id="profile_modal" class="modal">
+                <div class="modal_content">
+                    <span id="close_modal" class="close">&times;</span>
+                    <h2>Profile Information</h2>
+                    <div class="info_field">
+                        <strong>Name</strong>
+                        <input type="text" id="user_name" placeholder="Enter your name">
+                    </div>
+                    <div class="info_field">
+                        <strong>Email</strong>
+                        <span class="email_box" id="user_email"></span>
+                    </div>
+                    <div class="info_field">
+                        <strong>Phone Number</strong>
+                        <input type="tel" id="user_phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="info_field">
+                        <strong>Birthday</strong>
+                        <input type="date" id="user_birthday">
+                    </div>
+                    
+                    <div class="change_password">
+                        <h2>Confirm Current Password</h2>
+                        <label for="current_password">Current Password:</label>
+                        <input type="password" id="current_password" required>
+                    </div>
+                    
+                    <button id="logout_button" class="logout_button">Logout</button>  
+                    
+                    <div class="update_button">
+                        <button id="save_button">Save</button>
+                        <button id="cancel_button">Cancel</button>
+                    </div>                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mentor_container">
+        <div class="mentor_text">
+            <div class="mentor_title1">
+                <p>Kamu memiliki bakat mengajar?</p>
+            </div>
+            <div class="mentor_title2">
+                <p>Daftar sebagai Mentor sekarang!</p>
+            </div>
+            <div class="mentor_desc">
+                <p>Dapetin cuan sambil sharing ilmu sebagai Mentor - Mulai perjalananmu sekarang!</p>
+            </div>
+            <button class="mentor_registration_button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeOGPZx5IuVpPhUsqT-RKHKd7kE1Rmcu-B8erCxfC5hd76YlA/viewform', '_blank')">Daftar</button>
+            <div class="mentor_notes">
+                <p>Hanya tersedia untuk Binusian dengan IPK 3.7 atau diatasnya</p>
+            </div>
+        </div>
+        <div class="mentor_image">
+            <img src="images/mentor.png" alt="">
+        </div>
+    </div>
+    
+    <div class="break_line">
+        <div class="instagram_container">
+            <p class="instagram_title">Ikuti Kami di Instagram!</p>
+            <p class="instagram_desc">Tetap terupdate dengan fitur-fitur menarik yang akan datang!</p>
+            <a href="#" class="instagram_button">
+                <img src="images/instagram.jpg" alt="" class="instagram_icon">
+                <span class="instagram_handle">@catetin.</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="mentor_reason_container">
+        <div class="mentor_answer">
+            <h1>Kenapa Jadi Mentor di Catetin?</h1>
+            <p>Selain mendapatkan penghasilan tambahan, ada beberapa alasan menarik untuk menjadi mentor.</p>
+        </div>
+        <div class="mentor_reason_content">
+            <div class="mentor_reason_box">
+                <img src="images/experience.svg" alt="">
+                <h2>Meningkatkan pengalaman</h2>
+                <p>Menjadi mentor adalah kesempatan berharga untuk memperkaya pengalaman profesional yang tidak hanya akan meningkatkan keterampilan Anda, tetapi juga memberikan manfaat di berbagai bidang dalam karier Anda.</p>
+            </div>
+            <div class="mentor_reason_box">
+                <img src="images/networking.svg" alt="">
+                <h2>Memperluas Jaringan</h2>
+                <p>Sebagai mentor, kamu berkesempatan untuk berinteraksi dengan banyak orang, mulai dari teman seangkatan hingga mahasiswa baru. Ini adalah peluang emas untuk memperluas jaringan dan membangun koneksi yang solid.</p>
+            </div>
+            <div class="mentor_reason_box">
+                <img src="images/skills.svg" alt="">
+                <h2>Menambah Soft Skills</h2>
+                <p>Menjadi mentor akan membantu kamu dalam mengasah berbagai soft skills, seperti kemampuan berkomunikasi, kepemimpinan, dan pemecahan masalah, yang sangat berharga di dunia kerja.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mentor_info_container">
+        <div class="mentor_question">
+            <h1>Apa Saja Peran Seorang Mentor?</h1>
+        </div>
+        <div class="mentor_info_content">
+            <div class="mentor_info_box">
+                <img src="images/help.svg" alt="">
+                <p>Memberikan penjelasan mendalam tentang materi sulit untuk membantu mahasiswa memahami konsep penting.</p>
+            </div>
+            <div class="mentor_info_box">
+                <img src="images/emotion.svg" alt="">
+                <p>Memberikan dukungan emosional kepada mahasiswa saat menghadapi berbagai tantangan dalam studi mereka.</p>
+            </div>
+            <div class="mentor_info_box">
+                <img src="images/plan.svg" alt="">
+                <p>Membantu mahasiswa merencanakan studi dan memberikan tips untuk belajar efektif.</p>
+            </div>
+            <div class="mentor_info_box">
+                <img src="images/focus.svg" alt="">
+                <p>Memberikan dorongan agar mahasiswa tetap fokus dan semangat mencapai tujuan akademis.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Catetin. All Rights Reserved.</p>
+    </footer>
+
+    <script src="auth.js"></script>
+</body>
+</html>

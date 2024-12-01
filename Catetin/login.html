@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">    
+</head>
+<body>
+    <div class="login_wrap">
+        <div class="login_container">
+            <div class="signin_signup">
+                <form class="signin_form" autocomplete="off">
+                    <h2 class="signin_title">Login</h2>
+                    <div class="input_field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="login_email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="input_field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="login_password" name="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <p><a href="#" id="forgot_password_link">Forgot Password?</a></p>
+                </form>
+
+                <form class="signup_form" autocomplete="off">
+                    <h2 class="signup_title">Daftar</h2>
+                    <div class="input_field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="register_username" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="input_field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="register_email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="input_field">
+                        <i class="fas fa-phone"></i>
+                        <input type="text" id="register_phone" name="phone_number" placeholder="Phone Number" required>
+                    </div>
+                    <div class="input_field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="register_password" name="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn">Daftar</button>
+                </form>
+            </div>
+
+            <div class="panels_container">
+                <div class="panel left_panel">
+                    <div class="panels_content">
+                        <h3>Sudah punya akun?</h3>
+                        <p>Silahkan login untuk melanjutkan.</p>
+                        <button class="btn" id="sign_in_btn">Login</button>
+                    </div>
+                    <img src="images/signin.svg" class="panels_image" alt="Sign In Illustration">
+                </div>
+                <div class="panel right_panel">
+                    <div class="panels_content">
+                        <h3>Belum punya akun?</h3>
+                        <p>Daftar sekarang untuk mulai.</p>
+                        <button class="btn" id="sign_up_btn">Daftar</button>
+                    </div>
+                    <img src="images/signup.svg" class="panels_image" alt="Sign Up Illustration">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="forgot_password_modal" class="modal2">
+        <div class="modal_content2">
+            <span class="close" id="close_forgot_password_modal">&times;</span>
+            <h2>Forgot Password</h2>
+            <form id="forgot_password_form">
+                <label for="forgot_email">Email:</label>
+                <input type="email" id="forgot_email" required>
+                <label for="forgot_new_password">New Password:</label>
+                <input type="password" id="forgot_new_password" required>
+                <label for="forgot_confirm_password">Confirm New Password:</label>
+                <input type="password" id="forgot_confirm_password" required>
+                <button type="submit">Reset Password</button>
+            </form>
+        </div>
+    </div>    
+
+    <script src="login.js"></script>
+</body>
+</html>
